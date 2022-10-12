@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import "./variables.less";
+@import "./mixins.less";
+
+.dropdown {
+  float: left;
+  // overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  white-space: nowrap;
+  background-color: transparent;
+  color: @black-primary;
+  .menu-icon-2 {
+    display: none;
+  }
+  .menu-icon-1-up {
+    display: none;
+  }
+  .menu-icon-1 {
+    display: flex;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 50px;
+    font-size: 10px;
+  }
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  color: @violet-primary;
+  cursor: pointer;
+  .menu-icon-1 {
+    display: none;
+  }
+  .menu-icon-1-up {
+    display: flex;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 50px;
+    font-size: 10px;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: @violet-primary;
+  padding: 1% 2%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  &-0 {
+    display: none;
+  }
+  &-3 {
+    width: 260px;
+    height: 330px;
+    background-image: url("/assets/pexels-tim-douglas-6210798.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    & button {
+      .btn-full-white-2();
+      margin-top: 100%;
+      margin-left: 3%;
+    }
+  }
+}
+.dropdown-content > * h1 {
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0.4;
+  &:hover {
+    cursor: pointer;
+    color: @black-primary;
+  }
+}
+
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  white-space: nowrap;
+  background-color: transparent;
+  color: @white-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  &:hover {
+    background-color: @violet-light;
+    color: @white-primary;
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30%;
+}
+.more:link {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+  .dropdown {
+    float: left;
+    // overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    margin-left: -10px;
+    .menu-icon-1 {
+      display: none;
+    }
+    .menu-icon-2 {
+      display: flex;
+      position: absolute;
+      margin-top: -20px;
+      margin-left: 350px;
+    }
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: @violet-primary;
+    cursor: pointer;
+  }
+
+  .dropdown-content > * {
+    margin-left: -20%;
+    margin-bottom: 5%;
+  }
+  .dropdown-content > * h1 {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: @black-primary;
+    text-transform: uppercase;
+    opacity: 0.4;
+    &:hover {
+      cursor: pointer;
+      color: @black-primary;
+    }
+  }
+
+  .dropdown-content a {
+    float: none;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    &:hover {
+      color: @black-primary;
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: @white-primary;
+    color: @black-primary;
+    padding: 1% 2%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    &-0 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: -120%;
+      margin-top: 0%;
+      & i,
+      & h1 {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        color: @violet-primary;
+        text-transform: none;
+        opacity: 1;
+        padding-left: 10%;
+        &:hover {
+          cursor: pointer;
+          color: @black-primary;
+        }
+      }
+    }
+    &-1 {
+      margin-left: -53%;
+    }
+    &-2 {
+      margin-left: -55%;
+    }
+    &-3 {
+      width: 50%;
+      height: 330px;
+      background-image: url("/assets/pexels-tim-douglas-6210798.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 0% 10%;
+      & button {
+        .btn-full-white-2();
+        margin-top: 100%;
+        margin-left: 3%;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90%;
+    margin-top: -44%;
+    width: 100%;
+  }
+  .more:link {
+    text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dropdown {
+    float: left;
+    // overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    margin-left: -10px;
+    .menu-icon-1 {
+      display: none;
+    }
+    .menu-icon-2 {
+      display: flex;
+      position: absolute;
+      margin-top: -20px;
+      margin-left: 350px;
+    }
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: @violet-primary;
+    cursor: pointer;
+  }
+
+  .dropdown-content > * {
+    margin-left: -50%;
+    margin-bottom: 5%;
+  }
+  .dropdown-content > * h1 {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: @black-primary;
+    text-transform: uppercase;
+    opacity: 0.4;
+    &:hover {
+      cursor: pointer;
+      color: @black-primary;
+    }
+  }
+
+  .dropdown-content a {
+    float: none;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    &:hover {
+      color: @black-primary;
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: @white-primary;
+    color: @black-primary;
+    padding: 1% 2%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    &-0 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: -30%;
+      margin-top: 0%;
+      & i,
+      & h1 {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        color: @violet-primary;
+        text-transform: none;
+        opacity: 1;
+        padding-left: 10%;
+        &:hover {
+          cursor: pointer;
+          color: @black-primary;
+        }
+      }
+    }
+    &-2 {
+      margin-left: -52%;
+    }
+    &-3 {
+      width: 50%;
+      height: 330px;
+      background-image: url("/assets/pexels-tim-douglas-6210798.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 0% 10%;
+      & button {
+        .btn-full-white-2();
+        margin-top: 100%;
+        margin-left: 3%;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90%;
+    margin-top: -45%;
+    width: 100%;
+  }
+  .more:link {
+    text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .dropdown {
+    float: left;
+    // overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    margin-left: -10px;
+    .menu-icon-1 {
+      display: none;
+    }
+    .menu-icon-2 {
+      display: flex;
+      position: absolute;
+      margin-top: -20px;
+      margin-left: 350px;
+    }
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: @violet-primary;
+    cursor: pointer;
+  }
+
+  .dropdown-content > * {
+    margin-left: -20%;
+    margin-bottom: 5%;
+  }
+  .dropdown-content > * h1 {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: @black-primary;
+    text-transform: uppercase;
+    opacity: 0.4;
+    &:hover {
+      cursor: pointer;
+      color: @black-primary;
+    }
+  }
+
+  .dropdown-content a {
+    float: none;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: @black-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    &:hover {
+      color: @black-primary;
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: @white-primary;
+    color: @black-primary;
+    padding: 1% 2%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    &-0 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: -25%;
+      margin-top: 0%;
+      & i,
+      & h1 {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        color: @violet-primary;
+        text-transform: none;
+        opacity: 1;
+        padding-left: 10%;
+        &:hover {
+          cursor: pointer;
+          color: @black-primary;
+        }
+      }
+    }
+    &-2 {
+      margin-left: -25%;
+    }
+    &-3 {
+      width: 90%;
+      height: 330px;
+      background-image: url("/assets/pexels-tim-douglas-6210798.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin: 0% 10%;
+      & button {
+        .btn-full-white-2();
+        margin-top: 100%;
+        margin-left: 3%;
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 92%;
+    margin-top: -76%;
+    width: 100%;
+  }
+  .more:link {
+    text-decoration: underline;
+  }
+}

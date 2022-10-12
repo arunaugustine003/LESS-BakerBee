@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Bakerbee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+    <link rel="stylesheet/less" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet/less" type="text/css" href="./css/slick-theme.css" />
+    <link rel="stylesheet/less" type="text/css" href="./css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="./css/navbar.less" />
+    <link rel="stylesheet/less" type="text/css" href="./css/hover.css" />
+    <link rel="stylesheet/less" type="text/css" href="./css/queries_tab.less" />
+    <link rel="stylesheet/less" type="text/css" href="./css/queries_mob.less" />
+    <link rel="stylesheet/less" type="text/css" href="./css/queries_mob_425.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script src="https://kit.fontawesome.com/d88db7360c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <!-- /***************************************START HEADER SECTION*****************************************************/ -->
+        <div class="main-header">
+            <div class="main-header__inner h-100">
+                <div class="main-header__main" id="myHeader">
+                    <div class="main-header__logo hvr-grow">
+                        <h1>BakeryBee</h1>
+                        <img src="/assets/bee.svg" class="main-header__logo-image" alt="logo">
+                    </div>
+                    <nav class="main-header__nav">
+                        <ul class="main-header__nav-list nav-menu">
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">Home</a>
+                            </li>
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">About</a>
+                            </li>
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">Gallery</a>
+                            </li>
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Menu
+                                            <i class="fas fa-chevron-down menu-icon-1"></i>
+                                            <i class="fas fa-chevron-up menu-icon-1-up"></i>
+                                            <i class="fas fa-chevron-right menu-icon-2"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-content-0">
+                                                <i class="fas fa-chevron-left"></i>
+                                                <h1>Back to main menu</h1>
+                                            </div>
+                                            <div class="dropdown-content-1">
+                                                <h1>CUPCAKES</h1>
+                                                <a href="#">Chocolate Bourbon Pecan Pie Cupca...</a>
+                                                <a href="#">Easy Little Pandas</a>
+                                                <a href="#">Apple Pie Cupcakes</a>
+                                                <a href="#">Triple Salted Caramel Cupcakes</a>
+                                                <a href="#">Sprinkles’ Strawberry Cupcakes</a>
+                                                <a href="#">Bubbly Champagne Cupcakes</a>
+                                                <a href="#">Butterbeer Cupcakes</a>
+                                                <a href="#" class="more">click here for more</a>
+                                            </div>
+                                            <div class="dropdown-content-2">
+                                                <h1>MACARONS</h1>
+                                                <a href="#">Strawberry Cheesecake</a>
+                                                <a href="#">Chocolate with Chocolate Ganache</a>
+                                                <a href="#">Lemon</a>
+                                                <a href="#">Lavender Coconut</a>
+                                                <a href="#">Salted Caramel Praline</a>
+                                                <a href="#">Snickers</a>
+                                                <a href="#">Cookies & Cream</a>
+                                                <a href="#" class="more">click here for more</a>
+                                            </div>
+                                            <div class="dropdown-content-3">
+                                                <button>January Specials</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">Store
+                                    Locations</a>
+                            </li>
+                            <li class="main-header__nav-item nav-item"><a class="main-header__nav-link nav-link active"
+                                    href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /***************************************END HEADERS SECTION*****************************************************/ -->
+    <main>
+        <!-- /***************************************START SECTION ORDER*****************************************************/ -->
+        <section class="section-order">
+            <div class="section-order__inner h-100">
+                <div class="section-order__main">
+                    <div class="section-order__main-1">
+                        <h1>Store Locations</h1>
+                        <h2>
+                            <input type="text" name="name" id="name" placeholder="Search Store" required>
+                        </h2>
+                    </div>
+                    <div class="section-order__main-2">
+                        <div class="dropdown">
+                            <button class="dropbtn">Color of Macaron
+                                <i class="far fa-chevron-up imacron-1"></i>
+                                <i class="far fa-chevron-down imacron-2"></i>
+                            </button>
+                            <h2>Select</h2>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content-1">
+                                    <div class="dropdown-content-1-A">
+                                        <div class="dropdown-content-1-A-P"></div>
+                                        <h1>Pink</h1>
+                                    </div>
+                                    <div class="dropdown-content-1-B">
+                                        <div class="dropdown-content-1-B-R"></div>
+                                        <h1>Red</h1>
+                                    </div>
+                                    <div class="dropdown-content-1-C">
+                                        <div class="dropdown-content-1-C-Y"></div>
+                                        <h1>Yellow</h1>
+                                    </div>
+                                    <div class="dropdown-content-1-D">
+                                        <div class="dropdown-content-1-D-B"></div>
+                                        <h1>Blue</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-order__main-3">
+                        <h1>Size of Macaron</h1>
+                        <div class="section-order__main-3-links">
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                            <button>XXL</button>
+                        </div>
+                    </div>
+                    <div class="section-order__main-4">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 2*****************************************************/ -->
+        <section class="section-2">
+            <div class="section-2__inner h-100">
+                <div class="section-2__main slick-main">
+                    <div class="section-2__main">
+                        <h1>New Macaron Flavors</h1>
+                        <h2>Quisque imperdiet faucibus nunc, euismod pulvinar.</h2>
+                        <div class="section-2__main-2">
+                            <div class="section-2__main-2-slide">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="section-2__main-2-slide">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-section__item">
+                        <h1>New Macaron Flavors</h1>
+                        <h2>Quisque imperdiet faucibus nunc, euismod pulvinar.</h2>
+                        <div class="section-2__main-2">
+                            <div class="section-2__main-2-slide">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="section-2__main-2-slide">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 3*****************************************************/ -->
+        <section class="section-3">
+            <div class="section-3__inner h-100">
+                <div class="section-3__main">
+                    <div class="section-3__main-card">
+                        <i class="far fa-stars"></i>
+                        <h1>Always Fresh</h1>
+                    </div>
+                    <div class="section-3__main-card">
+                        <i class="far fa-clock"></i>
+                        <h1>24h Service</h1>
+                    </div>
+                    <div class="section-3__main-card">
+                        <i class="far fa-truck"></i>
+                        <h1>Fast Delivery</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 4*****************************************************/ -->
+        <section class="section-4">
+            <div class="section-4__inner h-100">
+                <div class="section-4__main">
+                    <div class="section-4__main-A">
+                        <img src="/assets/pics.png" class="section-4__main-A-image" alt="bakerbee">
+                    </div>
+                    <div class="section-4__main-B">
+                        <h1>About <span class="section-4__main-B-BB">Baker Bee</span></h1>
+                        <h2>Maecenas et tempus urna. Quisque rhoncus eget arcu condimentum lobortis. Integer pharetra
+                            mauris ac mauris vehicula lobortis. Sed vitae nibh dolor. Nullam aliquet, odio eu molestie
+                            posuere, mauris quam ultricies leo, nec tempor nibh nunc ac eros. Etiam nec tristique diam.
+                            Aliquam venenatis nulla id tincidunt facilisis. Sed eu mattis nibh.</h2>
+                        <h3>Store Locations</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 5*****************************************************/ -->
+        <section class="section-5">
+            <div class="section-5__inner h-100">
+                <div class="section-5__main">
+                    <div class="section-5__main-A">
+                        <h1>Premium <span></span>Members</h1>
+                        <h2>Quisque rhoncus eget arcu condimentum lobortis. Integer pharetra mauris ac mauris vehicula
+                            lobortis. Sed vitae nibh dolor. Nullam aliquet, odio eu molestie posuere, mauris quam
+                            ultricies.</h2>
+                        <button>Join Today</button>
+                    </div>
+                    <div class="section-5__main-X">
+                        <div class="container">
+                            <div id="countdown">
+                                <ul>
+                                    <li><span id="days"></span>days</li>
+                                    <li><span id="hours"></span>Hours</li>
+                                    <li><span id="minutes"></span>Minutes</li>
+                                    <li><span id="seconds"></span>Seconds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-5__main-B">
+                        <img src="/assets/cupcake.png" class="section-5__main-B-image" id="clip-2" alt="bakerbee">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 6*****************************************************/ -->
+        <section class="section-6">
+            <div class="section-6__inner h-100">
+                <div class="section-6__main">
+                    <div class="section-6__main-A">
+                        <div class="section-6__main-A-1">
+                            <img src="/assets/bee.svg" class="main-header__logo-image hvr-pulse-grow" alt="logo">
+                        </div>
+                        <div class="section-6__main-A-2">
+                            <h1>Catering <span></span>Services</h1>
+                            <h2>Donec blandit maximus dolor nec bibendum. Integer interdum, ipsum id rhoncus luctus,
+                                orci eros dictum sem, at congue nulla justo id diam.</h2>
+                        </div>
+                    </div>
+                    <div class="section-6__main-B">
+                        <div class="section-6__main-B-Card">
+                            <i class="far fa-calendar-alt"></i>
+                            <h1>All Year Catering</h1>
+                            <h2>In nec tempor augue. Maecenas<span></span> varius nulla lacus, et cursus lacus.</h2>
+                        </div>
+                        <div class="section-6__main-B-Card">
+                            <i class="far fa-file-alt"></i>
+                            <h1>Custom Menu</h1>
+                            <h2>Mauris pulvinar metus diam, sit ame<span></span> fermentum velit ullamcorper.</h2>
+                        </div>
+                        <div class="section-6__main-B-Card">
+                            <i class="far fa-thumbs-up"></i>
+                            <h1>Reliable Service</h1>
+                            <h2>Vivamus lorem metus, maximus<span></span> hendrerit viverra non, tempus.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 7*****************************************************/ -->
+        <section class="section-7">
+            <div class="section-7__inner h-100">
+                <div class="section-7__main">
+                    <div class="section-7__main-A">
+                        <div class="section-7__main-A-1">
+                            <h1>We serve <span class="x1"></span>yummy <span class="x2"></span>crumbs</h1>
+                        </div>
+                        <div class="section-7__main-A-2">
+                            <div class="section-7__main-A-2-slide">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="section-7__main-A-2-slide">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-7__main-B items">
+                        <div>
+                            <img src="/assets/pexels-sunsetoned-6624882.png" alt="bakerbee">
+                        </div>
+                        <div>
+                            <img src="/assets/pexels-andres-ayrton-6550780.png" alt="bakerbee">
+                        </div>
+                        <div>
+                            <img src="/assets/pexels-ella-olsson-3026810-1.png" alt="bakerbee">
+                        </div>
+                        <div>
+                            <img src="/assets/pexels-valeria-boltneva-7474204-1.png" alt="bakerbee">
+                        </div>
+                        <div>
+                            <img src="/assets/pexels-irina-edilbaeva-2525682.png" alt="bakerbee">
+                        </div>
+                        <div>
+                            <img src="/assets/pexels-andres-ayrton-6550780.png" alt="bakerbee">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 8*****************************************************/ -->
+        <section class="section-8">
+            <div class="section-8__inner h-100">
+                <div class="section-8__main">
+                    <div class="section-8__main-A">
+                        <h1>How does <span></span>it all<span></span> work?</h1>
+                        <h2>Maecenas et tempus urna. Quisque rhoncus eget arcu condimentum lobortis. Integer pharetra
+                            mauris ac mauris vehicula lobortis. Sed vitae nibh.</h2>
+                        <h3>Pick Up Locations</h3>
+                        <h4>Delivery Zones</h4>
+                    </div>
+                    <div class="section-8__main-B">
+                        <div class="section-8__main-B-1">
+                            <div class="section-8__main-B-card">
+                                <div class="section-8__main-B-card-num">
+                                    <h1>1.</h1>
+                                </div>
+                                <h1>Order via Form</h1>
+                                <h2>In nec tempor augue. Maecenas varius nulla lacus, et cursus lacus rutrum quis.</h2>
+                            </div>
+                            <div class="section-8__main-B-card">
+                                <div class="section-8__main-B-card-num">
+                                    <h1>2.</h1>
+                                </div>
+                                <h1>Confirm Order</h1>
+                                <h2>Praesent rutrum diam neque, molestie mollis odio mattis in. Quisque tempus.</h2>
+                            </div>
+                        </div>
+                        <div class="section-8__main-B-2">
+                            <div class="section-8__main-B-card">
+                                <div class="section-8__main-B-card-num">
+                                    <h1>3.</h1>
+                                </div>
+                                <h1>Pick Up Goodies or</h1>
+                                <h2>Nulla pellentesque laoreet ultrices. Phasellus nec lectus mi. Praesent volutpa.</h2>
+                            </div>
+                            <div class="section-8__main-B-card">
+                                <div class="section-8__main-B-card-num">
+                                    <h1>4.</h1>
+                                </div>
+                                <h1>Wait for Delivery</h1>
+                                <h2>Vestibulum nec lacus et elit dictum semper ac eu quam.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 9*****************************************************/ -->
+        <section class="section-9">
+            <div class="section-9__inner h-100">
+                <div class="section-9__main">
+                    <div class="section-9__main-A">
+                        <div class="section-9__main-A-1">
+                            <h1>Making a customer happy is our <span class="section-4__main-B-BB">#1 priority</span>
+                            </h1>
+                            <h2>Hear what they had to say about our products...</h2>
+                        </div>
+                        <div class="section-9__main-A-2 hvr-pulse-grow">
+                            <img src="/assets/bee.svg" class="main-header__logo-image" alt="logo">
+                        </div>
+                    </div>
+                    <div class="section-9__main-B">
+                        <div class="section-9__main-B-1">
+                            <img src="/assets/image.png" alt="bakerbee">
+                        </div>
+                        <div class="section-9__main-B-2">
+                            <div class="section-9__main-B-2-a">
+                                <blockquote class="bq">Duis lacinia mauris a ante ultrices, ac auctor mauris pretium.
+                                    Etiam
+                                    vulputate
+                                    aliquam
+                                    lacinia. Ut ornare massa et odio ultrices.
+                                </blockquote>
+                            </div>
+                            <div class="section-9__main-B-2-b">
+                                <h1>Marissa Sweeney</h1>
+                                <h2>Food Critic for The NY Times</h2>
+                            </div>
+                            <div class="section-9__main-B-2-c">
+                                <i class="fas fa-arrow-left"></i>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 10*****************************************************/ -->
+        <section class="section-10">
+            <div class="section-10__inner h-100">
+            </div>
+        </section>
+        <!-- /***************************************START SECTION 11 / FOOTER*****************************************************/ -->
+        <section class="section-11">
+            <div class="section-11__inner h-100">
+                <div class="section-11__main">
+                    <div class="section-11__main-A">
+                        <div class="section-11__main-A-1">
+                            <h1 class="footer-title-main">BAKER BEE</h1>
+                            <h1>About Us</h1>
+                            <h1>FAQs</h1>
+                            <h1>Terms & Conditions</h1>
+                            <h1>Privacy Policy</h1>
+                            <h1>Delivery & Collections</h1>
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="section-11__main-A-2">
+                            <div class="section-11__main-A-2-a">
+                                <h1 class="footer-title-main">FOLLOW US ON</h1>
+                                <div class="section-11__main-A-2-a-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-pinterest"></i>
+                                </div>
+                            </div>
+                            <div class="section-11__main-A-2-b">
+                                <h1 class="footer-title-main">OPENING HRS</h1>
+                                <h1>Mon - Sat: 11am - 7pm</h1>
+                                <h1>Sundays: 12pm - 6pm</h1>
+                            </div>
+                        </div>
+                        <div class="section-11__main-A-3">
+                            <div class="section-11__main-A-3-a">
+                                <h1 class="footer-title-main">FIND US</h1>
+                                <h1>1 Kingly Court</h1>
+                                <h1>London</h1>
+                                <h1>W1B 5PW</h1>
+                                <a href="#">Find Us On Google Maps</a>
+                            </div>
+                            <div class="section-11__main-A-3-b">
+                                <h1>info@bakerybee.com</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-11__main-B">
+
+                    </div>
+                    <div class="section-11__main-C">
+                        <h1>Copyright 2021 Bakery Bee</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        integrity="sha256-HmfY28yh9v2U4HfIXC+0D6HCdWyZI42qjaiCFEJgpo0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

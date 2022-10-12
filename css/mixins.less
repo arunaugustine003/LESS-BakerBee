@@ -1,0 +1,110 @@
+@import "./variables.less";
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flip-image() {
+  transform: scaleX(-1);
+}
+.freepik(@color) {
+  text-decoration: underline;
+  color: @color;
+}
+.btn-full-blue() {
+  text-decoration: none;
+  background-color: @violet-primary;
+  color: @white-primary;
+  border: 1px solid @violet-primary;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 21px 51px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: @violet-dark;
+    color: @white-primary;
+    border: 1px solid @violet-dark;
+  }
+}
+.btn-full-white() {
+  text-decoration: none;
+  background-color: @white-primary;
+  color: @violet-primary;
+  border: 1px solid @white-primary;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 21px 53px;
+  border-radius: 10px;
+  // box-shadow: 0px 11px 16px #00000029;
+  box-shadow: none;
+  cursor: pointer;
+  &:hover {
+    background-color: @pink-primary;
+    color: @white-primary;
+    border: 1px solid @pink-primary;
+  }
+}
+.btn-full-white-2() {
+  text-decoration: none;
+  background-color: @white-primary;
+  color: @violet-primary;
+  border: 1px solid @white-primary;
+  padding: 0;
+  text-transform: none;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 21px 53px;
+  border-radius: 10px;
+  box-shadow: 0px 11px 16px #00000029;
+  cursor: pointer;
+  &:hover {
+    background-color: @pink-primary;
+    color: @white-primary;
+    border: 1px solid @pink-primary;
+  }
+}
+/***************************************POP EFFECT*****************************************************/
+@-webkit-keyframes pop-on-hover {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes pop-on-hover {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.pop-on-hover() {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-animation-name: pop-on-hover;
+    animation-name: pop-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+}
